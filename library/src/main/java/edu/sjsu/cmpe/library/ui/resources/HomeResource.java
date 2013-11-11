@@ -18,7 +18,10 @@ public class HomeResource {
     }
 
     @GET
+
     public HomeView getHome() {
-	return new HomeView(bookRepository.getAllBooks());
+
+    return new HomeView(bookRepository.getAllBooks());
+
     }
 }
