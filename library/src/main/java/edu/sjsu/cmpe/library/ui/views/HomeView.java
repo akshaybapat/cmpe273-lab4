@@ -5,14 +5,21 @@ import com.yammer.dropwizard.views.View;
 import edu.sjsu.cmpe.library.domain.Book;
 
 public class HomeView extends View {
-    private final Book book;
 
-    public HomeView(Book book) {
-	super("home.mustache");
-	this.book = book;
-    }
+        private final List<Book> books;
 
-    public Book getBook() {
-	return book;
-    }
+        public HomeView(List<Book> books) {
+
+                  super("home.mustache");
+
+                  this.books = books;
+
+        }
+
+        public List<Book> getBooks() {
+
+                  return books;
+
+        }
+
 }
